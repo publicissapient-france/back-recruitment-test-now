@@ -1,0 +1,7 @@
+last_name, first_name, address, city, postal_code, delivery_date, delivery_center
+Doe, John,  1234 Boulevard Dupin, Paris ,  75015, 10/03/2022, North
+Ann, Mary, 5678 Rue Lafayette, Strasbourg, 67000, 11/03/2022, East
+Fabien, Louis, 75 Rue Desnouettes, Bordeaux, 30072, 11/03/2022, Ouest
+Kent, Laura, 25 Rue Miromesnil, Paris ,  75009, 10/03/2022, North
+Hasna, Mina, 1234 Boulevard Dupin, Paris ,  75015, 10/03/2022, North
+
