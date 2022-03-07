@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class PackageSenderTest {
+class PackageSenderTest {
 
     @Test
     @DisplayName("a boolean assertion")
-    public void hello() {
+    void hello() {
         var message = """
             hello, java 16
                 """;
