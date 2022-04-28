@@ -10,12 +10,19 @@ import java.util.stream.Stream;
 
 public class FileUtils {
 
-    public List<String> readFile(String fileName) throws IOException {
-        Path path = Paths.get(fileName);
-
-        Stream<String> lines = Files.lines(path);
-        List<String> data = lines.collect(Collectors.toList());
-        lines.close();
-        return data;
+    public static boolean fileExists(String filePath) {
+        Path path = Paths.get(filePath);
+        return Files.exists(path);
     }
+
+    // naive implementation of file reading returning a list of lines (the file content)
+    public static List<String> readFile(String filePath) {
+        Path path = Paths.get(filePath);
+        try (Stream<String> lines = Files.lines(path)) {
+            return lines.collect(Collectors.toList());
+        } catch (IOException e) {
+            throw new RuntimeException("Error while reading file " + filePath, e);
+        }
+    }
+
 }
