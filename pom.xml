@@ -12,8 +12,8 @@
         <encoding>UTF-8</encoding>
     </properties>
 
-    <groupId>fr.ps</groupId>
-    <artifactId>now</artifactId>
+    <groupId>fr.ps.now</groupId>
+    <artifactId>delivery-now</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
 

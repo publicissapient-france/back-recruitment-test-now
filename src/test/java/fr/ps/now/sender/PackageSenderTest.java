@@ -1,4 +1,4 @@
-package fr.ps.sender;
+package fr.ps.now.sender;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

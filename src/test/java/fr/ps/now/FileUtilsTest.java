@@ -1,4 +1,4 @@
-package fr.ps;
+package fr.ps.now;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class FileUtilsTest {
     @Test
     void should_return_true_when_file_exists() {
         // Given
-        String filePath = "src/test/resources/test.txt";
+        String filePath = "src/test/resources/oldApi.csv";
 
         // When
         boolean result = FileUtils.fileExists(filePath);
@@ -24,10 +24,9 @@ class FileUtilsTest {
     void readFile_should_return_correct_file_content() {
         //given
         var path = "src/test/resources/oldApi.csv";
-        var utils = new FileUtils();
 
         //when
-        var content = utils.readFile(path);
+        var content = FileUtils.readFile(path);
 
         //then
         then(content).containsExactly("last_name, first_name, address, city, postal_code, delivery_date, delivery_center",

@@ -1,4 +1,4 @@
-package fr.ps;
+package fr.ps.now;
 
 public class Main {
     

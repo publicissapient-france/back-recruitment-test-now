@@ -1,4 +1,4 @@
-package fr.ps;
+package fr.ps.now;
 
 import java.io.IOException;
 import java.nio.file.Files;
